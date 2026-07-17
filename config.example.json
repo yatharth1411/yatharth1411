@@ -1,0 +1,41 @@
+{
+  "instagram": {
+    "access_token": "PASTE_YOUR_LONG_LIVED_ACCESS_TOKEN_HERE",
+    "ig_user_id": "PASTE_YOUR_INSTAGRAM_BUSINESS_ACCOUNT_ID",
+    "self_username": "your_instagram_username",
+    "verify_token": "pick-any-secret-string-for-webhook-verify"
+  },
+  "api_version": "v19.0",
+
+  "default_comment_reply": "",
+  "default_dm_reply": "",
+
+  "triggers": [
+    {
+      "keywords": ["price", "cost", "rate", "charge", "kitna"],
+      "reply": "Thanks for asking! 💖 Please check the link in bio or DM me for the current rate card.",
+      "channels": ["comment", "dm"]
+    },
+    {
+      "keywords": ["link", "shop", "buy", "purchase", "dress"],
+      "reply": "Link is in my bio! 🔗 Comment 'sent' and I'll DM it to you too.",
+      "dm_reply": "Here you go! 🔗 Links to everything I post are also in my bio. Happy shopping!",
+      "channels": ["comment", "dm"]
+    },
+    {
+      "keywords": ["sponsor", "collab", "collaboration", "brand deal", "paid promotion", "partnership", "pr package"],
+      "reply": "For sponsorships & brand collabs please email 📩 colabs@example.com — I'll get back within 24h!",
+      "dm_reply": "Hey! 🙌 For sponsorships please share: 1) brand name 2) budget range 3) deliverables (reel/story/post). Or email colabs@example.com",
+      "channels": ["comment", "dm"]
+    },
+    {
+      "keywords": ["thank", "love", "amazing", "superb", "nice"],
+      "reply": "Thank you so much for the love! ❤️🥰",
+      "channels": ["comment"]
+    }
+  ],
+
+  "poll": {
+    "media_limit": 10
+  }
+}

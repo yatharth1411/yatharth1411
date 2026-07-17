@@ -1,0 +1,10 @@
+# secrets & private data - never commit these
+config.json
+sponsors.json
+.ig_reply_state.json
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/

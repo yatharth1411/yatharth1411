@@ -1,0 +1,5 @@
+# Instagram auto-reply bot
+requests>=2.28        # required for poll mode
+flask>=2.2            # required only for serve (webhook) mode
+
+# sponsor_manager.py uses only the Python standard library - nothing to install
